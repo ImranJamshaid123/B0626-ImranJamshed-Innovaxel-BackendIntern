@@ -1,0 +1,107 @@
+{
+  "info": {
+    "_postman_id": "48fed3a8-e266-4b94-af09-28f0ef1ad66f",
+    "name": "Innovaxel Backend Task",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "48971030",
+    "_collection_link": "https://go.postman.co/collection/48971030-48fed3a8-e266-4b94-af09-28f0ef1ad66f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get Event",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Event",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Tech Meetups\",\r\n  \"date\": \"2026-12-12\",\r\n  \"capacity\": 0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "User Registration",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"event_id\": \"dc520391-e42b-416f-a1a9-37df08c3a7e9\",\r\n  \"user_name\": \"Haffi\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/registrations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "registrations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/registrations/dc520391-e42b-416f-a1a9-37df08c3a7e9/Haffi",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "registrations",
+            "dc520391-e42b-416f-a1a9-37df08c3a7e9",
+            "Haffi"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
